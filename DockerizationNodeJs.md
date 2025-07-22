@@ -101,3 +101,5 @@ docker run -it -p 8000:8000 piyush-garg-docker-image
    ```
 
 ---
+
+This is how you can push to docker hub
