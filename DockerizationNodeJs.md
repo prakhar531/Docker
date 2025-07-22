@@ -33,13 +33,13 @@ Create a file named **Dockerfile** in the project root:
 FROM ubuntu
 
 # Install dependencies
-RUN apt-get update && \
-    apt-get install -y curl && \
-    apt-get upgrade -y
+RUN apt-get update
+RUN apt-get install -y curl
+RUN apt-get upgrade -y
 
 # Install Node.js
-RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - && \
-    apt-get install -y nodejs
+RUN curl -sL https://deb.nodesource.com/setup_18.x | bash -
+RUN apt-get install -y nodejs
 
 # Copy project files
 COPY package.json package.json
