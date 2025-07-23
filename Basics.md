@@ -48,6 +48,7 @@ docker stop container_name    # Stop a running container
 docker run -it <image_name>   # Spin up the image in an interactive terminal
 docker exec <container_name> <command>  # Execute command inside container
 docker exec -it container_name bash     # Connect to container shell
+docker run -it --name <container_name> <image_name> # Spin th image inside container by creating container.
 ```
 
 > `-it` stands for interactive terminal; it connects your terminal to the Docker container
